@@ -13,5 +13,6 @@ RUN git clone git://github.com/sstephenson/ruby-build.git /usr/local/rbenv/plugi
 ENV RBENV_ROOT /usr/local/rbenv
 ENV PATH $RBENV_ROOT/bin:$PATH
 RUN echo 'eval "$(rbenv init -)"' >> /etc/profile.d/rbenv.sh
+RUN echo 'eval "$(rbenv init -)"' >> /root/.bashrc
 
 RUN rbenv install 2.1.2
