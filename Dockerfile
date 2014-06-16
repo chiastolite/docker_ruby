@@ -1,5 +1,7 @@
 FROM ubuntu
 
+MAINTAINER chiastolite "https://github.com/chiastolite"
+
 RUN apt-get update; apt-get -y upgrade; apt-get clean
 
 RUN apt-get install -y git curl; apt-get clean
