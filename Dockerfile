@@ -11,3 +11,6 @@ RUN git clone git://github.com/sstephenson/ruby-build.git /usr/local/ruby-build
 
 ENV RUBY_HOME /usr/local/ruby
 ENV PATH /usr/local/ruby/bin:$PATH
+
+RUN /usr/local/ruby-build/bin/ruby-build 2.1.2 $RUBY_HOME
+RUN gem install bundler
